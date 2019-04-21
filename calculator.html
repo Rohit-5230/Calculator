@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculator</title>
+  <link href="https://icons8.com" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./calculator.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+     <center>
+     <img src="https://png.icons8.com/color/50/000000/calculator.png"><h1 class="d">Basic Calculator</h1>
+    
+     <form name="form">
+      <input class="screen" name="screen">
+      </form>
+      <table>
+      <tr>
+      <td><button type="button" class="btn btn-warning b" value ="" onclick="clean()">C</button></td>
+      <td><button type="button" class="btn btn-secondary b" value ="" onclick="back()"><img id="p" src="https://png.icons8.com/ios/50/000000/clear-symbol.png"></button></td>
+      <td><button type="button" class="btn btn-secondary b" value ="/" onclick="insert('/')">/</button></td>
+      <td><button type="button" class="btn btn-secondary b" value ="*" onclick="insert('*')">*</button></td>
+      </tr>
+      <tr>
+      <td><button type="button" class="btn btn-secondary b" value ="1" onclick="insert(1)">1</button></td>
+      <td><button type="button" class="btn btn-secondary b" value ="2" onclick="insert(2)">2</button></td>
+      <td><button type="button" class="btn btn-secondary b" value ="3" onclick="insert(3)">3</button></td>
+      <td><button type="button" class="btn btn-secondary b" value ="+" onclick="insert('+')">+</button></td>
+      </tr>
+      <tr>
+      <td><button type="button" class="btn btn-secondary b" value ="4" onclick="insert(4)">4</button></td>
+      <td><button type="button" class="btn btn-secondary b" value ="5" onclick="insert(5)">5</button></td>
+      <td><button type="button" class="btn btn-secondary b" value ="6" onclick="insert(6)">6</button></td>
+      <td><button type="button" class="btn btn-secondary b" value ="-" onclick="insert('-')">-</button></td>
+      </tr>
+      <tr>
+      <td><button type="button" class="btn btn-secondary b" value ="7" onclick="insert(7)">7</button></td>
+      <td><button type="button" class="btn btn-secondary b" value ="8" onclick="insert(8)">8</button></td>
+      <td><button type="button" class="btn btn-secondary b" value ="9" onclick="insert(9)">9</button></td>
+      <td rowspan="2"><button type="button" style="height: 108px" class="btn btn-secondary b" value ="="  onclick="result()">=</button></td>
+      </tr> 
+      <tr>
+      <td colspan="2"><button type="button" style="width: 108px" class="btn btn-secondary b" value ="0" onclick="insert(0)">0</button></td>
+      <td><button type="button" class="btn btn-secondary b" value ="." onclick="insert('.')">.</button></td>
+      </tr>
+      </table>
+      </center>
+<script src="./calculator.js"></script>
+</body>
+</html>
